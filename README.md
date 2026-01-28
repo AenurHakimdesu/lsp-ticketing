@@ -54,7 +54,7 @@ Which Breeze stack would you like to install?
 ```bash
 blade
 ```
-would you like dark support
+would you like dark support?
 ```bash
 yes
 ```
@@ -192,4 +192,29 @@ php artisan optimize:clear
 ### 12. **Jalankan server**
 ```bash
 php artisan serve
+```
+### Command-command yang dibutuhkan dalam membuat aplikasi
+### 1. **Membuat model + migrasi**
+```bash
+php artisan make:model Lokasi -m
+```
+### 2. **Refresh dan jalankan migrasi**
+```bash
+php artisan migrate:fresh
+```
+### 3. **Membuat seeder**
+```bash
+php artisan make:seeder NamaSeeder 
+```
+### 4. **Menjalankan seeder**
+```bash
+php artisan db:seed 
+```
+### 5. **Membuat controller**
+```bash
+php artisan make:controller Folder/NamaController 
+```
+### 3. **Refresh route, dll**
+```bash
+php artisan optimize:clear 
 ```
