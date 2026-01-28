@@ -1,6 +1,6 @@
 <x-layouts.admin title="Manajemen Lokasi">
 
-    {{-- Toast Notification (SAMA PERSIS dengan Manajemen Kategori) --}}
+    {{-- Toast Notification --}}
     @if (session('success'))
         <div class="toast toast-bottom toast-center">
             <div class="alert alert-success">
