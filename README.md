@@ -78,6 +78,7 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```bash
 <?php
 
+use App\Http\Controllers\Admin\LokasiController;
 use App\Http\Controllers\User\OrderController;
 use App\Http\Controllers\Admin\EventController as AdminEventController;
 use App\Http\Controllers\User\EventController as UserEventController;
@@ -114,6 +115,9 @@ Route::middleware('auth')->group(function () {
 
         // Event Management
         Route::resource('events', EventController::class);
+
+        // Lokasi Management
+        Route::resource('locations', LokasiController::class);
 
         // Tiket Management 
         Route::resource('tickets', TiketController::class);
@@ -180,7 +184,6 @@ class AuthenticatedSessionController extends Controller
         return redirect('/');
     }
 }
-
 ```
 ### 11. **refresh**
 ```bash
