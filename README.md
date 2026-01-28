@@ -193,6 +193,8 @@ php artisan optimize:clear
 ```bash
 php artisan serve
 ```
+###
+###
 ### Command-command yang dibutuhkan dalam membuat aplikasi
 ### 1. **Membuat model + migrasi**
 ```bash
@@ -214,7 +216,7 @@ php artisan db:seed
 ```bash
 php artisan make:controller Folder/NamaController 
 ```
-### 3. **Refresh route, dll**
+### 6. **Refresh route, dll**
 ```bash
 php artisan optimize:clear 
 ```
